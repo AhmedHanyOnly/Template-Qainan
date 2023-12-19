@@ -35,10 +35,12 @@
 }
 
 .h-fit {
+  height: -moz-fit-content;
   height: fit-content;
 }
 
 .w-fit {
+  width: -moz-fit-content;
   width: fit-content;
 }
 
@@ -117,12 +119,18 @@
   line-height: 26px;
   width: 620px;
 }
+.main-des.lg {
+  color: #2f2f2f;
+  font-size: 20px;
+  font-weight: 500;
+}
 
 .shape-title {
   font-weight: 700;
   font-size: 28px;
   line-height: 52px;
   color: #F46523;
+  width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   text-align: center;
@@ -163,6 +171,7 @@
   position: relative;
   margin-bottom: 10px;
   color: #2f2f2f;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .main-title.white {
@@ -235,7 +244,8 @@
 .job-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   transition: 0.3s;
 }
 .job-box .title {
@@ -332,7 +342,8 @@
 .partner-box img {
   width: 100px;
   height: auto;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .partner-box img.won-custom {
   width: 200px;
@@ -373,6 +384,7 @@
   top: 0;
   right: 0;
   padding: 7px 20px;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .box-article.show-article .img-holder {
@@ -383,7 +395,8 @@
   border-radius: 10px;
   transition: transform, 0.3s;
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: 260px;
 }
 .box-article.show-article .text-holder .article-title {
@@ -455,7 +468,8 @@
   width: 60px;
   height: 60px;
   border-radius: 4px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .blocks-news .box-side-News .title {
   color: #fff;
@@ -534,49 +548,69 @@
 .box-other-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 8px;
 }
 
 .card-client {
-  border-radius: 20px;
-  box-shadow: 0 0 10px #ddd;
-  color: #000;
-  padding: 20px;
-}
-.card-client .avatar {
-  width: 56.72px;
-  border-radius: 50%;
-}
-.card-client .stars {
-  width: 100px;
-}
-.card-client .text {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 37px;
-  letter-spacing: 0px;
-  text-align: right;
-  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 .card-client .info {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 5px;
+}
+.card-client .info .avatar {
+  width: 50px;
+  height: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
 }
 .card-client .info .name {
-  font-size: 24px;
+  color: #F46523;
+  font-size: 16px;
+  line-height: normal;
+  margin: 0;
   font-weight: 500;
-  line-height: 40px;
-  letter-spacing: 0em;
-  text-align: right;
 }
 .card-client .info .role {
-  font-size: 16px;
+  color: rgba(47, 47, 47, 0.6);
+  font-size: 13px;
   font-weight: 400;
-  line-height: 23px;
-  letter-spacing: 0em;
-  text-align: right;
+  line-height: normal;
+}
+.card-client .stars {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.card-client .stars .icon {
+  color: #cfd6d7;
+  width: 20px;
+}
+.card-client .stars .icon.active {
+  color: #ffb800;
+}
+.card-client .text {
+  color: rgba(47, 47, 47, 0.8);
+  text-align: justify;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%; /* 21px */
+}
+.card-client .text span {
+  color: #F46523;
+  font-weight: 500;
 }
 
 .swiper-landing {
@@ -596,7 +630,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .swiper-landing .swiper-pagination {
   bottom: 3%;
@@ -617,10 +652,12 @@
 }
 
 .partners-swiper {
+  height: -moz-fit-content;
   height: fit-content;
 }
 
 .country-swiper {
+  height: -moz-fit-content;
   height: fit-content;
   padding: 20px;
 }
@@ -673,6 +710,12 @@ input:focus,
 select,
 textarea:focus {
   outline: none;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
 }
 
 input:focus::placeholder,
@@ -819,6 +862,11 @@ textarea:focus::placeholder {
   border: 1px solid #b4bec8;
   font-size: 14px;
   font-weight: 400;
+}
+.contact .form .boxes .box .inp-holder .inp::-moz-placeholder, .contact .form .boxes .box .inp-holder textarea::-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(135, 135, 135, 0.5);
 }
 .contact .form .boxes .box .inp-holder .inp::placeholder,
 .contact .form .boxes .box .inp-holder textarea::placeholder {
@@ -1098,6 +1146,12 @@ textarea:focus::placeholder {
   border: 2px solid rgba(47, 47, 47, 0.2);
   background-color: rgba(178, 178, 178, 0.1);
 }
+.about .box-content .inp-holder .inp::-moz-placeholder {
+  color: rgba(47, 47, 47, 0.4);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+}
 .about .box-content .inp-holder .inp::placeholder {
   color: rgba(47, 47, 47, 0.4);
   font-size: 12px;
@@ -1129,6 +1183,48 @@ textarea:focus::placeholder {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.dream-makers .col {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.dream-makers .col .img-section {
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+}
+.dream-makers .col .text-section {
+  color: rgba(47, 47, 47, 0.8);
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 200%;
+  margin: 0;
+}
+.dream-makers .col .text-section span {
+  color: #F46523;
+  font-weight: 600;
+}
+.dream-makers .col .list-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #2f2f2f;
+  text-align: justify;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 30px; /* 200% */
+  margin-top: 24px;
+}
+.dream-makers .col .list-section li {
+  list-style-type: none;
+  background-image: url("../../../images/icons/cr-done-green.png");
+  background-repeat: no-repeat;
+  padding-left: 32px;
+  background-size: 24px;
+  background-position: left center;
 }
 
 .footer {
@@ -1202,4 +1298,4 @@ textarea:focus::placeholder {
   font-weight: 400;
   line-height: normal;
   padding: 10px 0 11px;
-}
+}/*# sourceMappingURL=main.css.map */
