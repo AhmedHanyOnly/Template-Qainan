@@ -94,6 +94,50 @@
   color: #fff;
 }
 
+.main-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 13px;
+  border: 1px solid #F46523;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #fff;
+  background-color: #F46523;
+  transition: 0.3s;
+}
+.main-btn.main-outline {
+  color: #F46523;
+  background-color: transparent;
+}
+.main-btn.main-outline:hover {
+  color: #fff;
+  background-color: #F46523;
+}
+
+.btn-white {
+  padding: 16px;
+  border-radius: 8px !important;
+  gap: 10px;
+  border: 1px solid #F46523;
+  background-color: #fff;
+  color: #F46523;
+  border-radius: 2px;
+  padding: 10px 64px;
+  transition: 0.4s;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+}
+.btn-white:hover {
+  background-color: #F46523;
+  color: #fff;
+}
+
 .main-heading {
   margin-bottom: 35px;
   color: #2f2f2f;
@@ -123,6 +167,11 @@
   color: #2f2f2f;
   font-size: 20px;
   font-weight: 500;
+}
+@media (max-width: 767.98px) {
+  .main-des {
+    width: 100%;
+  }
 }
 
 .shape-title {
@@ -606,11 +655,72 @@
   text-align: justify;
   font-size: 14px;
   font-weight: 400;
-  line-height: 150%; /* 21px */
+  line-height: 150%;
+  /* 21px */
 }
 .card-client .text span {
   color: #F46523;
   font-weight: 500;
+}
+
+.box-work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+  min-height: 507px;
+  height: 100%;
+  border-radius: 16px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.box-work .content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+}
+.box-work .content .img-holder {
+  width: 100%;
+  height: 295px;
+  border-radius: 8px;
+}
+.box-work .content .img-holder img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+.box-work .content .name {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-bottom: 0px;
+  color: rgb(47, 47, 47);
+}
+.box-work .content .des {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 0px;
+  color: rgba(47, 47, 47, 0.7);
+}
+.box-work .btn-holder {
+  width: 100%;
+}
+.box-work .btn-holder .main-btn {
+  width: 100%;
+  padding: 13px;
 }
 
 .swiper-landing {
@@ -651,23 +761,52 @@
   background-color: #F46523;
 }
 
-.partners-swiper {
+.swiper-works {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 15px 15px 70px;
+}
+.swiper-works .holder-control {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 280px;
+  max-width: 100%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-works .holder-control .swiper-pagination {
+  z-index: unset;
+}
+.swiper-works .holder-control .swiper-pagination .swiper-pagination-bullet {
+  width: 32px;
+  height: 4px;
+  border-radius: 6px;
+  opacity: 1;
+  transition: 0.3s;
+  background-color: rgba(47, 47, 47, 0.3);
+}
+.swiper-works .holder-control .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #F46523;
+}
+.swiper-works .holder-control .swiper-button-next,
+.swiper-works .holder-control .swiper-button-prev {
   height: -moz-fit-content;
   height: fit-content;
 }
-
-.country-swiper {
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 20px;
+.swiper-works .holder-control .swiper-button-next::after,
+.swiper-works .holder-control .swiper-button-prev::after {
+  font-size: 19px;
+  font-weight: 700;
+  color: #F46523;
 }
-@media (max-width: 767.98px) {
-  .country-swiper {
-    padding: 10px;
-  }
+.swiper-works .holder-control .swiper-button-next {
+  right: 0%;
 }
-.country-swiper .swiper-wrapper .swiper-slide.swiper-slide-active .country-box {
-  box-shadow: 0 0 10px 0 rgba(17, 71, 107, 0.2);
+.swiper-works .holder-control .swiper-button-prev {
+  left: 0%;
 }
 
 * {
@@ -1163,6 +1302,7 @@ textarea:focus::placeholder {
   padding: 50px 0;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   border-top: 1px solid #ddd;
   margin: 20px 0;
 }
