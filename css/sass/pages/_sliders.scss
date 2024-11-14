@@ -4,17 +4,26 @@
   .swiper-wrapper {
     .swiper-slide {
       position: relative;
+      background-color: #000;
 
       .container {
         position: relative;
         height: 100%;
       }
 
-      img {
+      .bg-slide {
         position: absolute;
         top: 0;
         left: 0;
         @include set-cover-img;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
       }
     }
   }
@@ -75,12 +84,10 @@
       }
     }
     .swiper-button-next {
-      right: 0%;
+      left: 0%;
     }
     .swiper-button-prev {
       left: 0%;
-      
     }
   }
-
 }

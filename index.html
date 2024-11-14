@@ -1,4 +1,4 @@
-<html lang="en" dir="ltr">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,9 +18,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=El+Messiri:wght@400..700&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -81,22 +82,15 @@
               <div class="holder-nav-list">
                 <ul class="nav-list">
                   <li class="item">
-                    <a href="tel:" class="link"
-                      ><img
-                        class="icon"
-                        src="images/icons/call-nav.png"
-                        alt="icon"
-                      />
+                    <a href="tel:" class="link">
+                      <i class="fa-solid fa-phone icon"></i>
                       +398 17384506</a
                     >
                   </li>
                   <li class="item">
-                    <a href="mailto:" class="link"
-                      ><img
-                        class="icon"
-                        src="images/icons/mail-nav.png"
-                        alt="icon"
-                      />
+                    <a href="mailto:" class="link">
+                      <i class="fa-regular fa-envelope icon"></i>
+
                       ask@contracting.com</a
                     >
                   </li>
@@ -109,7 +103,7 @@
           <div class="container">
             <h1 class="m-0">
               <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="logo" />
+                <img src="images/taka.svg" alt="logo" />
               </a>
             </h1>
             <button
@@ -124,19 +118,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" href="index.html">Home</a>
+                  <a class="nav-link active" href="index.html">الرئيسية</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Services</a>
+                  <a class="nav-link" href="#">من نحن</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Business</a>
+                  <a class="nav-link" href="#">الخدمات</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
+                  <a class="nav-link" href="#">أراء العملاء</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contact Us</a>
+                  <a class="nav-link" href="#">تواصل معنا</a>
                 </li>
               </ul>
             </div>
@@ -155,29 +149,45 @@
       <!-- Swiper -->
       <div class="swiper mySwiper swiper-landing">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="images/landing-1.png" />
+          <!-- <div class="swiper-slide">
+            <img src="images/people-taking-photos-food.jpg" />
             <div class="container">
               <div class="box-intro">
                 <h2 class="title" data-swiper-parallax="-700">
-                  Building <span>The Future...</span>
+                  جرب <span>عروضنا الجديدة...</span>
                 </h2>
                 <p class="des" data-swiper-parallax="-1000">
-                  Experience And Excellence in The Field Of Contracting
+                  استمتع بخدمات مميزة
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="swiper-slide">
-            <img src="images/landing-2.png" />
+            <img class="bg-slide" src="images/close-up-food-lover-eating.jpg" />
             <div class="container">
               <div class="box-intro">
                 <h2 class="title" data-swiper-parallax="-700">
-                  Building <span>The Future...</span>
+                  جرب <span>عروضنا الجديدة...</span>
                 </h2>
                 <p class="des" data-swiper-parallax="-1000">
-                  Experience And Excellence in The Field Of Contracting
+                  استمتع بخدمات مميزة عبر تطبيقاتنا قم بالتنزيل الان
                 </p>
+                <div class="btn-apps" data-swiper-parallax="-1200">
+                  <a href="">
+                    <img
+                      src="./images/app-store.webp"
+                      class="app"
+                      alt="app-store"
+                    />
+                  </a>
+                  <a href="">
+                    <img
+                      src="./images/play-store.webp"
+                      class="app"
+                      alt="play-store"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -187,127 +197,50 @@
       <!-- End Header -->
     </section>
     <!-- End Landing page -->
-    <!-- Start Other Image -->
-    <div class="other-image py-5">
+    <!-- Start about-us -->
+    <section class="section-about mb-5 pt-5">
       <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
-          <div class="col">
-            <div class="box-other-image">
-              <img src="images/landing-1.png" alt="image" />
+        <div class="row gx-lg-5 gy-lg-3">
+          <div class="col-12 col-lg-5">
+            <div class="about-land">
+              <img
+                src="./images/people-taking-photos-food.jpg"
+                alt=""
+                class="img-bg"
+              />
             </div>
           </div>
-          <div class="col">
-            <div class="box-other-image">
-              <img src="images/landing-2.png" alt="image" />
-            </div>
-          </div>
-          <div class="col">
-            <div class="box-other-image">
-              <img src="images/other-image1.png" alt="image" />
+          <div class="col-12 col-lg-7">
+            <div class="content pt-0" data-aos="fade-right">
+              <div class="header pt-0">
+                <div class="text">
+                  <div class="title">من نحن</div>
+                  <div class="des">
+                    تكة تطبيق يهدف إلى توفير توصيل للطلبات مع خصومات
+                  </div>
+                </div>
+              </div>
+              <div class="text">
+                تكة هو تطبيق مبتكر يهدف إلى توفير خدمات توصيل الطلبات بسهولة
+                وسرعة، مع تقديم خصومات مميزة للمستخدمين. يركز التطبيق على جعل
+                تجربة الطلب ممتعة وميسرة، مع ضمان توفير عروض جذابة تساعد العملاء
+                على توفير المال أثناء تلبية احتياجاتهم اليومية
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- End Other Image -->
-    <!-- Start service -->
-    <div class="service pt-5 pb-4">
-      <div class="container">
-        <div class="center">
-          <h5 class="main-heading sm-b">
-            Learn about what <span>Qainan</span> offers
-          </h5>
-          <p class="main-des mb-0">
-            At Qaynan Company, we provide a comprehensive range of services in
-            the contracting field. ,Whether you want to build a commercial,
-            residential or industrial facility, or you want to transform
-            existing spaces into modern and innovative spaces.
-          </p>
-        </div>
-        <div class="d-flex justify-content-end my-4">
-          <button class="btn-white">See More</button>
-        </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <div class="col">
-            <div class="operation-box">
-              <div class="header">
-                <div class="img-holder">
-                  <img src="images/serv1.png" alt="photo" />
-                </div>
-                <h6 class="title">Residential projects</h6>
-              </div>
-              <p class="des">
-                In a world of rapid change, we provide consulting services that
-                combine deep experience with innovative vision. We are here to
-                shape the future of your business, providing detailed
-                consultations based on a comprehensive analysis and precise
-                understanding of your needs. Thanks to our dedicated and
-                committed team, we provide a customized solution that improves
-                operations and enhances competitiveness. Drawing on a proven
-                track record of success, we help you make the right strategic
-                decisions and achieve excellence in the evolving and changing
-                business world.
-              </p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="operation-box">
-              <div class="header">
-                <div class="img-holder">
-                  <img src="images/serv2.png" alt="photo" />
-                </div>
-                <h6 class="title">Residential projects</h6>
-              </div>
-              <p class="des">
-                We build you not just a home, but a shelter that reflects your
-                identity and fulfills your life's ambitions. In our residential
-                projects, we master the art of construction to create
-                communities that enhance luxury and meet the expectations of
-                modern living. We combine aesthetic design with innovative
-                engineering to create an irresistible home, where luxury is
-                evident in every detail. Discover with us a new concept of
-                living, where comfort meets excellence, and the place is
-                transformed into a unique experience bearing the imprint of
-                individuality and the beauty of modern design.
-              </p>
-            </div>
-          </div>
-          <div class="col">
-            <div class="operation-box">
-              <div class="header">
-                <div class="img-holder">
-                  <img src="images/serv3.png" alt="photo" />
-                </div>
-                <h6 class="title">Residential projects</h6>
-              </div>
-              <p class="des">
-                We draw our strength from our belief in the power of education
-                as a driver of change and progress. In the field of our
-                educational projects, we seek to create inspiring and advanced
-                educational environments. We combine innovative design and
-                educational engineering to develop effective and stimulating
-                spaces. We view every educational project as an opportunity to
-                set new standards of excellence, where technology meets
-                intelligent interaction to enhance the learning process. Join us
-                on our journey to build a learning and inspiring future, where
-                the vision is embodied in every classroom.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End service -->
+    </section>
+    <!-- End about-us -->
     <!-- Start works -->
     <div class="works pt-5 pb-4">
       <div class="container">
         <div class="center">
-          <h5 class="main-heading sm-b">Our Feature <span>workst</span></h5>
+          <h5 class="main-heading sm-b">تعرف على <span>فريقنا</span></h5>
           <p class="main-des">
-            At Qaynan Company, we provide a comprehensive range of services in
-            the contracting field. ,Whether you want to build a commercial,
-            residential or industrial facility, or you want to transform
-            existing spaces into modern and innovative spaces.
+            نحن في مهمة لإضفاء الطابع الديمقراطي على توصيل الطعام. يتطلب خلق
+            مستقبل توصيل الطعام التعاطف والابتكار والشهية لمواجهة التحديات
+            اللوجستية المعقدة. رؤيتنا هي تشكيل مستقبل توصيل الطعام
           </p>
         </div>
         <!-- Swiper -->
@@ -317,18 +250,17 @@
               <div class="box-work">
                 <div class="content">
                   <div class="img-holder">
-                    <img src="images/works-1.png" alt="our works" />
+                    <img src="images/Dima Khalifa.webp" alt="our works" />
+                    <div class="des-holder">
+                      <p class="des">
+                        خريجة ماجستير في علم النفس من جامعة بن غوريون. أخصائي
+                        موارد بشرية من ذوي الخبرة، ومهارة في تحديد المصادر،
+                        والتوظيف الفني، وإجراء المقابلات لصناعة التكنولوجيا
+                        العالية
+                      </p>
+                    </div>
                   </div>
-                  <h6 class="name">Establishing a commercial project</h6>
-                  <p class="des">
-                    Shaping Commerce, Shaping the Future: Where vision meets
-                    adventure, we embark on a journey to create a distinctive
-                    commerce haven, redefine spaces and enable success beyond
-                    borders.
-                  </p>
-                </div>
-                <div class="btn-holder">
-                  <button class="main-btn main-outline">More details</button>
+                  <h6 class="name">Dima Khalifa</h6>
                 </div>
               </div>
             </div>
@@ -336,18 +268,17 @@
               <div class="box-work">
                 <div class="content">
                   <div class="img-holder">
-                    <img src="images/works-2.png" alt="our works" />
+                    <img src="images/Dima Khalifa.webp" alt="our works" />
+                    <div class="des-holder">
+                      <p class="des">
+                        خريجة ماجستير في علم النفس من جامعة بن غوريون. أخصائي
+                        موارد بشرية من ذوي الخبرة، ومهارة في تحديد المصادر،
+                        والتوظيف الفني، وإجراء المقابلات لصناعة التكنولوجيا
+                        العالية
+                      </p>
+                    </div>
                   </div>
-                  <h6 class="name">Establishing a commercial project</h6>
-                  <p class="des">
-                    Shaping Commerce, Shaping the Future: Where vision meets
-                    adventure, we embark on a journey to create a distinctive
-                    commerce haven, redefine spaces and enable success beyond
-                    borders.
-                  </p>
-                </div>
-                <div class="btn-holder">
-                  <button class="main-btn main-outline">More details</button>
+                  <h6 class="name">Dima Khalifa</h6>
                 </div>
               </div>
             </div>
@@ -355,18 +286,17 @@
               <div class="box-work">
                 <div class="content">
                   <div class="img-holder">
-                    <img src="images/works-3.png" alt="our works" />
+                    <img src="images/Dima Khalifa.webp" alt="our works" />
+                    <div class="des-holder">
+                      <p class="des">
+                        خريجة ماجستير في علم النفس من جامعة بن غوريون. أخصائي
+                        موارد بشرية من ذوي الخبرة، ومهارة في تحديد المصادر،
+                        والتوظيف الفني، وإجراء المقابلات لصناعة التكنولوجيا
+                        العالية
+                      </p>
+                    </div>
                   </div>
-                  <h6 class="name">Establishing a commercial project</h6>
-                  <p class="des">
-                    Shaping Commerce, Shaping the Future: Where vision meets
-                    adventure, we embark on a journey to create a distinctive
-                    commerce haven, redefine spaces and enable success beyond
-                    borders.
-                  </p>
-                </div>
-                <div class="btn-holder">
-                  <button class="main-btn main-outline">More details</button>
+                  <h6 class="name">Dima Khalifa</h6>
                 </div>
               </div>
             </div>
@@ -374,18 +304,17 @@
               <div class="box-work">
                 <div class="content">
                   <div class="img-holder">
-                    <img src="images/landing-1.png" alt="our works" />
+                    <img src="images/Dima Khalifa.webp" alt="our works" />
+                    <div class="des-holder">
+                      <p class="des">
+                        خريجة ماجستير في علم النفس من جامعة بن غوريون. أخصائي
+                        موارد بشرية من ذوي الخبرة، ومهارة في تحديد المصادر،
+                        والتوظيف الفني، وإجراء المقابلات لصناعة التكنولوجيا
+                        العالية
+                      </p>
+                    </div>
                   </div>
-                  <h6 class="name">Establishing a commercial project</h6>
-                  <p class="des">
-                    Shaping Commerce, Shaping the Future: Where vision meets
-                    adventure, we embark on a journey to create a distinctive
-                    commerce haven, redefine spaces and enable success beyond
-                    borders.
-                  </p>
-                </div>
-                <div class="btn-holder">
-                  <button class="main-btn main-outline">More details</button>
+                  <h6 class="name">Dima Khalifa</h6>
                 </div>
               </div>
             </div>
@@ -399,133 +328,83 @@
       </div>
     </div>
     <!-- End works -->
-    <!-- Start dream makers -->
-    <div class="dream-makers py-5">
-      <div class="container">
-        <div class="center">
-          <h5 class="main-heading sm-b"><span>Qinan</span> dream makers</h5>
-          <p class="main-des lg">
-            Innovative contractors in building the future
-          </p>
-          <div class="row g-4 row-cols-1 row-cols-lg-2">
-            <div class="col">
-              <img src="./images/building-1.png" alt="" class="img-section" />
-              <p class="text-section">
-                Our team of experienced engineers and contractors combine
-                diverse skills and work in close cooperation to ensure that
-                projects are efficiently implemented in accordance with
-                international specifications and standards.
-              </p>
-              <ul class="list-section">
-                <li>Compliance with specifications and standards</li>
-                <li>Qualified and professional work team</li>
-                <li>Quality of work and dedication</li>
-                <li>Experience and proven history</li>
-              </ul>
-            </div>
-            <div class="col">
-              <p class="text-section">
-                Welcome to [<span>Qinan</span>], where craftsmanship meets a
-                commitment to redefining the construction landscape. As a
-                leading contracting company, we take pride in delivering
-                unparalleled quality and precision in every project we
-                undertake. With a legacy of excellence, our seasoned team of
-                professionals seamlessly transform visions into reality. ,From
-                concept to completion, we prioritize customer satisfaction,
-                ensuring that every structure is a testament to our unwavering
-                commitment to excellence. At [Qainan], we don't just build
-                buildings, we build lasting relationships built on trust,
-                transparency, and a shared vision for a future where innovation
-                and construction merge.
-              </p>
-              <img src="./images/building-2.png" alt="" class="img-section" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End dream makers -->
     <!-- Start customer -->
     <div class="customer py-5">
       <div class="container">
         <div class="center">
-          <h5 class="main-heading sm-b">Customer <span>opinions</span></h5>
+          <h5 class="main-heading sm-b">آراء <span>العملاء</span></h5>
           <p class="main-des">
-            Welcome to our Opinion Corner, where diverse viewpoints come
-            together to foster meaningful discussions. In this curated space, we
-            showcase thought-provoking opinions from industry experts, guest
-            contributors, and our engaged community.
+            مرحبًا بكم في ركن الرأي لدينا، حيث تجتمع وجهات النظر المتنوعة لتعزيز
+            المناقشات الهادفة. في هذه المساحة المنسقة، نعرض آراء مثيرة للتفكير
+            من خبراء الصناعة والمساهمين الضيوف ومجتمعنا المشارك
           </p>
         </div>
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-          <div class="col">
-            <div class="card-client">
-              <div class="info">
-                <img src="./images/avatar1.png" class="avatar" alt="" />
-                <h3 class="name">Mustafa Al-Saeed</h3>
-                <span class="role"> Doctor </span>
+        <div class="swiper swiper-customer">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-client">
+                <div class="info">
+                  <img src="./images/avatar1.png" class="avatar" alt="" />
+                  <h3 class="name">Mustafa Al-Saeed</h3>
+                </div>
+                <div class="stars">
+                  <i class="icon fas fa-star active"></i>
+                  <i class="icon fas fa-star active"></i>
+                  <i class="icon fas fa-star active"></i>
+                  <i class="icon fas fa-star active"></i>
+                  <i class="icon fas fa-star active"></i>
+                </div>
+                <div class="text">
+                  لقد كانت تجربتي مع هذا المنتج رائعة! الجودة ممتازة والأداء فاق
+                  توقعاتي. التغليف كان جيدًا ووصل في الموعد المحدد. أوصي به بشدة
+                  لكل من يبحث عن منتج موثوق ومميز
+                </div>
               </div>
-              <div class="stars">
-                <i class="icon fas fa-star active"></i>
-                <i class="icon fas fa-star active"></i>
-                <i class="icon fas fa-star active"></i>
-                <i class="icon fas fa-star active"></i>
-                <i class="icon fas fa-star active"></i>
+            </div>
+            <div class="swiper-slide">
+              <div class="card-client">
+                <div class="info">
+                  <img src="./images/avatar1.png" class="avatar" alt="" />
+                  <h3 class="name">Mustafa Al-Saeed</h3>
+                </div>
+                <div class="stars">
+                  <i class="icon fas fa-star active"></i>
+                  <i class="icon fas fa-star active"></i>
+                  <i class="icon fas fa-star active"></i>
+                  <i class="icon fas fa-star active"></i>
+                  <i class="icon fas fa-star active"></i>
+                </div>
+                <div class="text">
+                  لقد كانت تجربتي مع هذا المنتج رائعة! الجودة ممتازة والأداء فاق
+                  توقعاتي. التغليف كان جيدًا ووصل في الموعد المحدد. أوصي به بشدة
+                  لكل من يبحث عن منتج موثوق ومميز
+                </div>
               </div>
-              <div class="text">
-                Working with [<span>Qainan</span>] was a rewarding experience.
-                ,Their dedication to quality, transparent communication and
-                skilled team made our construction project a triumph. ,The end
-                result reflects their commitment to excellence. ,Highly
-                recommended for their exceptional service.”
+            </div>
+            <div class="swiper-slide">
+              <div class="card-client">
+                <div class="info">
+                  <img src="./images/avatar1.png" class="avatar" alt="" />
+                  <h3 class="name">Mustafa Al-Saeed</h3>
+                </div>
+                <div class="stars">
+                  <i class="icon fas fa-star active"></i>
+                  <i class="icon fas fa-star active"></i>
+                  <i class="icon fas fa-star active"></i>
+                  <i class="icon fas fa-star active"></i>
+                  <i class="icon fas fa-star active"></i>
+                </div>
+                <div class="text">
+                  لقد كانت تجربتي مع هذا المنتج رائعة! الجودة ممتازة والأداء فاق
+                  توقعاتي. التغليف كان جيدًا ووصل في الموعد المحدد. أوصي به بشدة
+                  لكل من يبحث عن منتج موثوق ومميز
+                </div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="card-client">
-              <div class="info">
-                <img src="./images/avatar1.png" class="avatar" alt="" />
-                <h3 class="name">Mustafa Al-Saeed</h3>
-                <span class="role"> Doctor </span>
-              </div>
-              <div class="stars">
-                <i class="icon fas fa-star active"></i>
-                <i class="icon fas fa-star active"></i>
-                <i class="icon fas fa-star active"></i>
-                <i class="icon fas fa-star active"></i>
-                <i class="icon fas fa-star active"></i>
-              </div>
-              <div class="text">
-                Working with [<span>Qainan</span>] was a rewarding experience.
-                ,Their dedication to quality, transparent communication and
-                skilled team made our construction project a triumph. ,The end
-                result reflects their commitment to excellence. ,Highly
-                recommended for their exceptional service.”
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card-client">
-              <div class="info">
-                <img src="./images/avatar1.png" class="avatar" alt="" />
-                <h3 class="name">Mustafa Al-Saeed</h3>
-                <span class="role"> Doctor </span>
-              </div>
-              <div class="stars">
-                <i class="icon fas fa-star active"></i>
-                <i class="icon fas fa-star active"></i>
-                <i class="icon fas fa-star active"></i>
-                <i class="icon fas fa-star active"></i>
-                <i class="icon fas fa-star active"></i>
-              </div>
-              <div class="text">
-                Working with [<span>Qainan</span>] was a rewarding experience.
-                ,Their dedication to quality, transparent communication and
-                skilled team made our construction project a triumph. ,The end
-                result reflects their commitment to excellence. ,Highly
-                recommended for their exceptional service.”
-              </div>
-            </div>
+          <div class="holder-control">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </div>
@@ -534,7 +413,7 @@
     <!-- Start map -->
     <div class="map py-4">
       <div class="container">
-        <div class="main-title">Location map</div>
+        <div class="main-title">موقعنا</div>
         <iframe
           class="w-100 rounded"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d463878.29488595825!2d46.82252880000001!3d24.725191849999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2z2KfZhNix2YrYp9i2INin2YTYs9i52YjYr9mK2Kk!5e0!3m2!1sar!2seg!4v1696749591193!5m2!1sar!2seg"
@@ -546,134 +425,325 @@
     </div>
     <!-- End map -->
     <!-- Start about -->
-    <div class="about py-4">
+    <div class="about py-4" data-aos="fade-down">
       <div class="container">
         <div class="row gx-md-5">
           <div class="col-12 col-lg-3">
             <div class="box-side">
-              <div class="main-title">Call Us</div>
+              <div class="main-title">اتصل بنا</div>
               <div class="text">
-                Thank you for considering ABC Construction for your construction
-                needs. Whether you have a general inquiry, a specific project in
-                mind, or are interested in partnership opportunities, we are
-                here to assist you. Please use the form below to get in touch
-                with us. Provide as much detail as possible, and our team will
-                respond promptly. Your satisfaction is our priority, and we look
-                forward to the opportunity to collaborate with you on your next
-                construction endeavor."
+                يهدف قسم 'اتصل بنا' في تطبيق تكة إلى توفير وسيلة سهلة ومباشرة
+                للعملاء للتواصل مع فريق الدعم أو الإدارة. سواء كان لديك استفسار
+                عام، مشكلة تتطلب حل، أو رغبة في تقديم اقتراحات لتحسين الخدمة،
+                فإننا هنا لنستمع إليك ونقدم لك المساعدة التي تحتاجها. يمكن
+                للعملاء ملء نموذج التواصل بمعلوماتهم وتفاصيل استفساراتهم، مما
+                يتيح لفريقنا الرد بسرعة وكفاءة. نحن في تكة نسعى لتقديم تجربة
+                عملاء مميزة ونعمل جاهدين على تحقيق رضاك التام
               </div>
               <ul class="info">
                 <li class="item">
-                  <img src="./images/icons/home.png" alt="" />
-                  Address : Kuwait - Al Abraj Street
+                  <i class="fa-solid fa-house icon"></i>
+                  العنوان: الكويت - شارع الأبراج
                 </li>
                 <li class="item">
-                  <img src="./images/icons/call.png" alt="" />
-                  Phone : +398 17384506
+                  <i class="fa-solid fa-phone icon"></i>
+                  الهاتف: +398 17384506
                 </li>
                 <li class="item">
-                  <img src="./images/icons/sms.png" alt="" />
-                  E-mail: : ask@contracting.com
+                  <i class="fa-regular fa-envelope icon"></i>
+                  البريد الإلكتروني: ask@contracting.com
+                </li>
+              </ul>
+              <ul
+                class="nav nav-pills justify-content-center gap-3 mb-3"
+                id="pills-tab"
+                role="tablist"
+              >
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link btn-collaps active"
+                    id="pills-home-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-home"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-home"
+                    aria-selected="true"
+                  >
+                    شخصي
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link btn-collaps"
+                    id="pills-profile-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-profile"
+                    aria-selected="false"
+                  >
+                    سائق
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link btn-collaps"
+                    id="pills-contact-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#pills-contact"
+                    type="button"
+                    role="tab"
+                    aria-controls="pills-contact"
+                    aria-selected="false"
+                  >
+                    المطعم
+                  </button>
                 </li>
               </ul>
             </div>
           </div>
           <div class="col-12 col-lg-9">
             <div class="box-content">
-              <div class="main-title">Get In Touch With Us</div>
-              <form action="">
-                <div class="row gy-3">
-                  <div class="col-12 col-md-6">
-                    <div class="inp-holder">
-                      <label for="" class="title">Name</label>
-                      <input
-                        type="text"
-                        class="form-control inp"
-                        placeholder="Enter your name"
-                      />
+              <div class="main-title">تواصل معنا</div>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-home"
+                  role="tabpanel"
+                  aria-labelledby="pills-home-tab"
+                  tabindex="0"
+                >
+                  <form action="">
+                    <div class="row gy-3">
+                      <div class="col-12 col-md-6">
+                        <div class="inp-holder">
+                          <label for="" class="title">الاسم</label>
+                          <input
+                            type="text"
+                            class="form-control inp"
+                            placeholder="أدخل اسمك"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="inp-holder">
+                          <label for="" class="title">البريد الإلكتروني</label>
+                          <input
+                            type="text"
+                            class="form-control inp"
+                            placeholder="أدخل بريدك الإلكتروني"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="inp-holder">
+                          <label for="" class="title">رقم الهاتف</label>
+                          <input
+                            type="text"
+                            class="form-control inp"
+                            placeholder="أدخل رقم هاتفك"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="inp-holder">
+                          <label for="" class="title">الموضوع</label>
+                          <input
+                            type="text"
+                            class="form-control inp"
+                            placeholder="أدخل موضوع الرسالة"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="inp-holder">
+                          <label for="" class="title">الرسالة</label>
+                          <textarea
+                            name=""
+                            class="form-control inp"
+                            id=""
+                            cols="30"
+                            rows="5"
+                            placeholder="أدخل رسالتك"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <button class="btn-sub">إرسال</button>
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="inp-holder">
-                      <label for="" class="title">E-mail</label>
-                      <input
-                        type="text"
-                        class="form-control inp"
-                        placeholder="Enter your E-mail"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="inp-holder">
-                      <label for="" class="title">Phone number</label>
-                      <input
-                        type="text"
-                        class="form-control inp"
-                        placeholder="Enter your Phone number"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-12 col-md-6">
-                    <div class="inp-holder">
-                      <label for="" class="title">Subject</label>
-                      <input
-                        type="text"
-                        class="form-control inp"
-                        placeholder="Enter your Subject"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="inp-holder">
-                      <label for="" class="title">Message</label>
-                      <textarea
-                        name=""
-                        class="form-control inp"
-                        id=""
-                        cols="30"
-                        rows="5"
-                        placeholder="Enter your Message"
-                      ></textarea>
-                    </div>
-                  </div>
-                  <div class="d-flex justify-content-end">
-                    <button class="btn-sub">Send</button>
-                  </div>
+                  </form>
                 </div>
-              </form>
+                <div
+                  class="tab-pane fade"
+                  id="pills-profile"
+                  role="tabpanel"
+                  aria-labelledby="pills-profile-tab"
+                  tabindex="0"
+                >
+                  <form action="">
+                    <div class="row gy-3">
+                      <div class="col-12 col-md-6">
+                        <div class="inp-holder">
+                          <label for="" class="title">اسم السائق</label>
+                          <input
+                            type="text"
+                            class="form-control inp"
+                            placeholder="أدخل اسمك"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="inp-holder">
+                          <label for="" class="title">رقم الهاتف</label>
+                          <input
+                            type="text"
+                            class="form-control inp"
+                            placeholder="أدخل رقم هاتفك"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="inp-holder">
+                          <label for="" class="title">التاريخ</label>
+                          <input type="date" class="form-control inp" />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="inp-holder">
+                          <label for="" class="title">المدينة</label>
+                          <input
+                            type="text"
+                            class="form-control inp"
+                            placeholder="أدخل المدينة"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="inp-holder">
+                          <div class="d-flex gap-5 form-switch">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              role="switch"
+                              id="flexSwitchCheckDefault"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexSwitchCheckDefault"
+                              >هل تحب الدراجة؟</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <button class="btn-sub">إرسال</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-contact"
+                  role="tabpanel"
+                  aria-labelledby="pills-contact-tab"
+                  tabindex="0"
+                >
+                  <form action="">
+                    <div class="row gy-3">
+                      <div class="col-12 col-md-6">
+                        <div class="inp-holder">
+                          <label for="" class="title">الاسم بالكامل</label>
+                          <input
+                            type="text"
+                            class="form-control inp"
+                            placeholder="أدخل اسمك"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="inp-holder">
+                          <label for="" class="title">الاسم التجاري</label>
+                          <input
+                            type="text"
+                            class="form-control inp"
+                            placeholder="أدخل الاسم التجاري"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="inp-holder">
+                          <label for="" class="title">رقم الهاتف</label>
+                          <input
+                            type="text"
+                            class="form-control inp"
+                            placeholder="أدخل رقم هاتفك"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="inp-holder">
+                          <label for="" class="title">البريد الإلكتروني</label>
+                          <input
+                            type="text"
+                            class="form-control inp"
+                            placeholder="أدخل بريدك الإلكتروني"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="inp-holder">
+                          <label for="" class="title">المدينة</label>
+                          <input
+                            type="text"
+                            class="form-control inp"
+                            placeholder="أدخل المدينة"
+                          />
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-end">
+                        <button class="btn-sub">إرسال</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="pills-disabled"
+                  role="tabpanel"
+                  aria-labelledby="pills-disabled-tab"
+                  tabindex="0"
+                >
+                  ...
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- End about -->
-    <div class="container">
-      <div class="subject">
-        <span class="list">Constrution</span>
-        <span class="list">Power & Energy</span>
-        <span class="list">Power & Energy</span>
-        <span class="list">Power & Energy </span>
-        <span class="list">Infrastructure</span>
-        <span class="list">Infrastructure</span>
-      </div>
-    </div>
+
     <!-- start footer -->
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-up"  data-aos-duration="1500">
       <div class="footer-top">
         <div class="container">
           <div class="d-flex justify-content-between flex-wrap gap-3">
             <div>
-              <div href="" class="main-title white">Quick Links</div>
+              <div href="" class="main-title white">روابط سريعة</div>
               <div class="items">
-                <a href="" class="item">Who We Are</a>
-                <a href="" class="item">Projects</a>
-                <a href="" class="item">Clients & Partners</a>
-                <a href="" class="item">News & Event</a>
-                <a href="" class="item">Media</a>
+                <a href="" class="item">من نحن</a>
+                <a href="" class="item">العملاء والشركاء</a>
+                <a href="" class="item">الخدمات</a>
+                <a href="" class="item">العروض</a>
               </div>
             </div>
             <div>
-              <div href="" class="main-title white">Follow Us</div>
+              <div href="" class="main-title white">تابعنا</div>
               <div class="box-social">
                 <div class="social mt-3">
                   <a href="">
@@ -695,29 +765,25 @@
               </div>
             </div>
             <div>
-              <div href="" class="main-title white">Contact Us</div>
+              <div href="" class="main-title white">تواصل معنا</div>
               <div class="items">
                 <a href="#" class="item">
-                  <img src="./images/icons/home.png" alt="" />
-                  Address : Kuwait - Al Abraj Street
+                  <i class="fa-solid fa-house"></i>
+                  العنوان: الكويت - شارع الأبراج
                 </a>
                 <a href="#" class="item">
-                  <img src="./images/icons/call.png" alt="" />
-                  Phone : +398 17384506
+                  <i class="fa-solid fa-phone"></i>
+                  الهاتف: +398 17384506
                 </a>
                 <a href="#" class="item">
-                  <img src="./images/icons/sms.png" alt="" />
-                  E-mail: : ask@contracting.com
-                </a>
-                <a href="#" class="item">
-                  <img src="./images/icons/time.png" alt="" />
-                  Time: : Sat-Wed 8:00am-4:00pm
+                  <i class="fa-regular fa-envelope"></i>
+                  البريد الإلكتروني: ask@contracting.com
                 </a>
               </div>
             </div>
 
             <div class="info">
-              <img src="./images/logo.png" alt="" class="logo" />
+              <img src="./images/taka.svg" alt="" class="logo" />
             </div>
           </div>
         </div>
@@ -729,8 +795,13 @@
         </div>
       </div>
     </footer>
+
     <!-- end footer -->
     <!-- Js Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Main JS Bootstrap File -->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- Main JS FontAwesome File -->

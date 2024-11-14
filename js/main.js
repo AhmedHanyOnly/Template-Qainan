@@ -19,9 +19,9 @@ new Swiper(".swiper-works", {
   spaceBetween: 20,
   grabCursor: true,
   loop: true,
-  speed: 600,
+  speed: 1500,
   autoplay: {
-    delay: 2500,
+    delay: 4000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -37,10 +37,35 @@ new Swiper(".swiper-works", {
       slidesPerView: 1,
     },
     768: {
-      slidesPerView: 1.25,
+      slidesPerView: 2,
     },
     1024: {
-      slidesPerView: 2.25,
+      slidesPerView: 4,
+    },
+  },
+});
+new Swiper(".swiper-customer", {
+  spaceBetween: 20,
+  grabCursor: true,
+  loop: true,
+  speed: 1000,
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
     },
   },
 });

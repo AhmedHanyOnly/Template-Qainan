@@ -85,3 +85,16 @@
   }
   
 }
+
+.btn-collaps{
+  background-color: #fffbf0;
+  box-shadow: 0 0 5px #ddd;
+  color: $main-color;
+  transition: 300ms all ease-in-out;
+  width: 100% !important;
+  &.active,&:hover{
+    background-color: $main-color !important;
+    color: #fff !important;
+  }
+
+}
